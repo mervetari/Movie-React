@@ -7,10 +7,10 @@ import noImage from '../utils/no-image-available.png';
 import '../styles/Detail.css';
 
 const Detail = (imdbID) => {
-  // React Router'daki dinamik URL kısmını almalıyız (useParams)
-  const { showDetail, selectedMovie } = useParams(MovieContext);
+
+  const { showDetail, selectedMovie } = useContext(MovieContext);
   useEffect(() => {
-    showDetail(imdbID); // useParams ile alınan film id'sini kullanınız. 
+    showDetail('tt1201607'); 
   }, []);
 
   return (
@@ -36,17 +36,10 @@ const Detail = (imdbID) => {
           <div>{selectedMovie.Runtime}</div>
         </div>
         <div className='field'>
-          <div className='label'>Genre</div>
-          <div>{selectedMovie.Genre}</div>
-        </div>
-        <div className='field'>
           <div className='label'>IMDB Rating</div>
           <div>{selectedMovie.imdbRating}</div>
         </div>
-        <div className='field'>
-          <div className='label'>Director</div>
-          <div>{selectedMovie.Director}</div>
-        </div>
+        
       </div>
     </div>
   );

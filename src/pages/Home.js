@@ -21,7 +21,7 @@ const Home = () => {
           {movies?.map((movie) => {
             return (
               <Link
-                to={movie.imdbID} 
+                to={'movies/tt1201607'} 
                 className='text-link'
                 key={movie.imdbID}
               >
