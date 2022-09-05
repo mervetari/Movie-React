@@ -1,32 +1,19 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
-import { routes } from '../config/Router';
-
 import '../styles/Header.css';
 
 const Header = () => {
   return (
     <header>
+     
       <nav>
-        <div className='logo'>Filmler</div>
+      <div className="container">
+        <div className='logo'>Film Sitesi</div>
         <div className='nav-item'>
-          <div className='nav-links'>
-            {routes.map((route) => {
-              if (route.isHeaderElement) {
-                return (
-                  <li key={route.title}>
-                    <Link to={route.path} className='link'>
-                      {route.title}
-                    </Link>
-                  </li>
-                );
-              }
-            })}
-          </div>
+        </div>
         </div>
       </nav>
+    
     </header>
   );
 };

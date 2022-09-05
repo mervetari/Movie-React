@@ -8,11 +8,12 @@ nav {
 
 .logo {
   display: flex;
-  align-items: center;
+  
+  text-align: center;
   padding: 10px;
-  border: 1px solid #74b9ff;
-  border-radius: 5px;
-  color: #74b9ff;
+  border: 5px solid #ff7474;
+  border-radius: 10px;
+  color: #ff7474;
 }
 
 .nav-item {

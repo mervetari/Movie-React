@@ -29,7 +29,6 @@ const Card = ({ image, title, year, addFavorite, isFavorite }) => {
 
       <div className='info'>
         <span className='title'>{title}</span>
-        <span className='year'>{year}</span>
       </div>
     </div>
   );

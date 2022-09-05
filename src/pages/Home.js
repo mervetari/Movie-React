@@ -39,7 +39,7 @@ const Home = () => {
         </div>
       ) : (
         <div className='search-warning'>
-          <p>Arama Yapınız</p>
+
         </div>
       )}
     </div>
