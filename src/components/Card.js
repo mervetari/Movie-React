@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import noImage from '../utils/no-image-available.png';
 import '../styles/Card.css';
 
